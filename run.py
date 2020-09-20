@@ -3,7 +3,7 @@ from os import path
 from time import sleep
 
 server_host = "localhost"
-server_port = 11234
+server_port = 14566
 client_cert = path.join(path.dirname(__file__), "client.crt")
 client_key = path.join(path.dirname(__file__), "client.key")
 
