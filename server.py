@@ -28,7 +28,7 @@ class SSLServer:
         while True:
             data = sock.recv(self.chunk_size)
             if data:
-                print(data)
+                print(data.decode())
             else:
                 break
 
@@ -41,7 +41,3 @@ class SSLServerThread(Thread):
 
     def run(self):
         self._server.connect()
-
-    def stop(self):
-        self._server.close()
-
